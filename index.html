@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dreams Training Centre | Skill Verification & Testing</title>
+  <meta name="description" content="Dreams Training Centre - Authorized SVP (Skill Verification Program) center in Tiruchirappalli, Tamil Nadu. Providing high-quality testing and certification services for candidates aspiring to work in Saudi Arabia." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            green: {
+              DEFAULT: '#42A047',
+              light: '#4DB856',
+              dark: '#2E7D32',
+              50: '#E8F5E9',
+              100: '#C8E6C9',
+            },
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    * { scroll-behavior: smooth; }
+    body { font-family: 'Inter', Arial, Helvetica, sans-serif; }
+
+    @keyframes marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .marquee-track {
+      animation: marquee 20s linear infinite;
+    }
+    @media (min-width: 640px) {
+      .marquee-track {
+        animation-duration: 25s;
+      }
+    }
+    @media (min-width: 1024px) {
+      .marquee-track {
+        animation-duration: 30s;
+      }
+    }
+    .marquee-track:hover {
+      animation-play-state: paused;
+    }
+
+    /* Fix touch devices for mobile menu */
+    @media (max-width: 767px) {
+      .mobile-menu-open {
+        overflow: hidden;
+      }
+    }
+  </style>
+</head>
+<body class="antialiased bg-white text-gray-900 overflow-x-hidden">
+
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 sm:h-20">
+        <a href="#home" class="flex items-center gap-1.5 sm:gap-2">
+          <span class="text-green font-bold text-lg sm:text-xl tracking-tight">Dreams</span>
+          <span class="text-gray-700 font-medium text-lg sm:text-xl">Training Centre</span>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-8">
+          <a href="#home" class="text-gray-600 hover:text-green transition-colors text-sm font-medium">Home</a>
+          <a href="#about" class="text-gray-600 hover:text-green transition-colors text-sm font-medium">About</a>
+          <a href="#vision" class="text-gray-600 hover:text-green transition-colors text-sm font-medium">Vision</a>
+          <a href="#services" class="text-gray-600 hover:text-green transition-colors text-sm font-medium">Services</a>
+          <a href="#partners" class="text-gray-600 hover:text-green transition-colors text-sm font-medium">Partners</a>
+          <a href="#contact" class="text-gray-600 hover:text-green transition-colors text-sm font-medium">Contact</a>
+          <a href="#contact" class="bg-green hover:bg-green-light text-white font-semibold px-5 py-2.5 rounded-lg transition-colors text-sm">Get In Touch</a>
+        </nav>
+
+        <button onclick="toggleMobileMenu()" class="md:hidden text-gray-700 p-2" aria-label="Toggle menu">
+          <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="md:hidden bg-white border-t border-gray-100 hidden">
+      <nav class="flex flex-col px-6 py-4 gap-1">
+        <a href="#home" onclick="closeMobileMenu()" class="text-gray-600 hover:text-green transition-colors py-3 text-base font-medium border-b border-gray-50">Home</a>
+        <a href="#about" onclick="closeMobileMenu()" class="text-gray-600 hover:text-green transition-colors py-3 text-base font-medium border-b border-gray-50">About</a>
+        <a href="#vision" onclick="closeMobileMenu()" class="text-gray-600 hover:text-green transition-colors py-3 text-base font-medium border-b border-gray-50">Vision</a>
+        <a href="#services" onclick="closeMobileMenu()" class="text-gray-600 hover:text-green transition-colors py-3 text-base font-medium border-b border-gray-50">Services</a>
+        <a href="#partners" onclick="closeMobileMenu()" class="text-gray-600 hover:text-green transition-colors py-3 text-base font-medium border-b border-gray-50">Partners</a>
+        <a href="#contact" onclick="closeMobileMenu()" class="text-gray-600 hover:text-green transition-colors py-3 text-base font-medium">Contact</a>
+        <a href="#contact" onclick="closeMobileMenu()" class="bg-green hover:bg-green-light text-white font-semibold px-5 py-3 rounded-lg transition-colors text-base text-center mt-3">Get In Touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <img
+        src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1920&q=80"
+        alt="Professional training environment"
+        class="absolute inset-0 w-full h-full object-cover"
+      />
+      <div class="absolute inset-0 bg-black/65"></div>
+
+      <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="inline-block bg-white/25 border border-white/40 rounded-full px-3 py-1.5 sm:px-5 sm:py-2 mb-6 sm:mb-8 backdrop-blur-sm">
+          <span class="text-white text-xs sm:text-sm font-semibold tracking-wide">
+            Authorized SVP Center &bull; Tiruchirappalli, Tamil Nadu
+          </span>
+        </div>
+
+        <h1 class="text-3xl sm:text-5xl lg:text-7xl font-bold text-white leading-tight mb-4 sm:mb-6">
+          Empowering Careers,<br />
+          <span class="text-green-100">Building Futures</span>
+        </h1>
+
+        <p class="text-base sm:text-lg md:text-xl text-white/80 max-w-3xl mx-auto mb-8 sm:mb-10 leading-relaxed px-2 sm:px-0">
+          Dreams Training Centre provides high-quality skill verification,
+          testing and certification services for candidates aspiring to work in
+          the Kingdom of Saudi Arabia. Authorized by the Ministry of Human
+          Resources and Social Development.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4 sm:px-0">
+          <a href="#services" class="bg-white hover:bg-gray-100 text-green-dark font-bold px-6 py-3 sm:px-8 sm:py-4 rounded-lg transition-colors text-base sm:text-lg">
+            Our Services
+          </a>
+          <a href="#contact" class="border-2 border-white/40 hover:border-white text-white font-bold px-6 py-3 sm:px-8 sm:py-4 rounded-lg transition-colors text-base sm:text-lg">
+            Contact Us
+          </a>
+        </div>
+
+        <div class="mt-10 sm:mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 max-w-3xl mx-auto">
+          <div class="text-center">
+            <div class="text-2xl sm:text-3xl md:text-4xl font-bold text-white">15+</div>
+            <div class="text-white/60 text-xs sm:text-sm mt-1">Trade Categories</div>
+          </div>
+          <div class="text-center">
+            <div class="text-2xl sm:text-3xl md:text-4xl font-bold text-white">7+</div>
+            <div class="text-white/60 text-xs sm:text-sm mt-1">Industry Partners</div>
+          </div>
+          <div class="text-center">
+            <div class="text-2xl sm:text-3xl md:text-4xl font-bold text-white">50+</div>
+            <div class="text-white/60 text-xs sm:text-sm mt-1">Expert Assessors</div>
+          </div>
+          <div class="text-center">
+            <div class="text-2xl sm:text-3xl md:text-4xl font-bold text-white">24/7</div>
+            <div class="text-white/60 text-xs sm:text-sm mt-1">Candidate Support</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        <svg class="w-6 h-6 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+        </svg>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section id="about" class="py-16 sm:py-20 lg:py-28 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
+          <div class="relative">
+            <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+              <img
+                src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&q=80"
+                alt="Training session at Dreams Training Centre"
+                class="object-cover w-full h-[280px] sm:h-[380px] lg:h-[500px]"
+              />
+            </div>
+            <div class="absolute -bottom-6 -right-6 bg-green rounded-xl p-6 shadow-xl hidden sm:block">
+              <div class="text-white text-3xl font-bold">SVP</div>
+              <div class="text-white/80 text-sm">Certified Center</div>
+            </div>
+          </div>
+
+          <div>
+            <div class="inline-block bg-green-50 rounded-full px-4 py-1.5 mb-4">
+              <span class="text-green font-semibold text-sm tracking-wide uppercase">About Us</span>
+            </div>
+
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 leading-tight">
+              Your Trusted Partner for<br />
+              Skill Verification &amp; Testing
+            </h2>
+
+            <p class="text-gray-600 text-lg leading-relaxed mb-6">
+              Dreams Training Centre, established in Tiruchirappalli, Tamil Nadu,
+              is a premier institution dedicated to providing high-quality skill
+              assessment, testing, and certification services. We are authorized
+              to operate as an SVP (Skill Verification Program) center under the
+              Ministry of Human Resources and Social Development, Kingdom of
+              Saudi Arabia.
+            </p>
+
+            <p class="text-gray-600 text-lg leading-relaxed mb-8">
+              With a strong presence in the region, we bridge the gap between
+              skilled professionals in India and employment opportunities in
+              Saudi Arabia, ensuring every candidate meets the required
+              international standards through rigorous testing and certification.
+            </p>
+
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-lg bg-green-50 flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <span class="text-gray-800 font-medium text-sm">Government Authorized Center</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-lg bg-green-50 flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <span class="text-gray-800 font-medium text-sm">Multi-Trade Assessment</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-lg bg-green-50 flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <span class="text-gray-800 font-medium text-sm">International Standards</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-lg bg-green-50 flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <span class="text-gray-800 font-medium text-sm">Experienced Faculty</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== VISION ========== -->
+    <section id="vision" class="py-16 sm:py-20 lg:py-28 bg-green-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <div class="inline-block bg-green/10 rounded-full px-4 py-1.5 mb-4">
+            <span class="text-green font-semibold text-sm tracking-wide uppercase">Our Vision</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+            Driven by Purpose, Guided by Values
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto text-lg">
+            Dreams Training Centre is built on a clear vision to empower
+            individuals with skills and knowledge to achieve their goals.
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
+          <div class="bg-white border border-gray-100 rounded-2xl p-6 sm:p-8 hover:shadow-lg transition-all group">
+            <div class="w-14 h-14 rounded-xl bg-green-50 flex items-center justify-center mb-6 group-hover:bg-green/10 transition-colors">
+              <svg class="w-7 h-7 text-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+              </svg>
+            </div>
+            <div class="text-green/40 text-sm font-mono mb-2">01</div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Empowering Dreams</h3>
+            <p class="text-gray-600 leading-relaxed">
+              To create a supportive environment where individuals can explore their passions and turn them into successful careers in the global workforce.
+            </p>
+          </div>
+
+          <div class="bg-white border border-gray-100 rounded-2xl p-6 sm:p-8 hover:shadow-lg transition-all group">
+            <div class="w-14 h-14 rounded-xl bg-green-50 flex items-center justify-center mb-6 group-hover:bg-green/10 transition-colors">
+              <svg class="w-7 h-7 text-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+              </svg>
+            </div>
+            <div class="text-green/40 text-sm font-mono mb-2">02</div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Skill Development</h3>
+            <p class="text-gray-600 leading-relaxed">
+              To provide industry-relevant training and certification, bridging the gap between education and employment across international markets.
+            </p>
+          </div>
+
+          <div class="bg-white border border-gray-100 rounded-2xl p-6 sm:p-8 hover:shadow-lg transition-all group sm:col-span-2 md:col-span-1">
+            <div class="w-14 h-14 rounded-xl bg-green-50 flex items-center justify-center mb-6 group-hover:bg-green/10 transition-colors">
+              <svg class="w-7 h-7 text-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <div class="text-green/40 text-sm font-mono mb-2">03</div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Holistic Growth</h3>
+            <p class="text-gray-600 leading-relaxed">
+              To foster personal and professional growth, focusing on overall development so every candidate is fully prepared for their international career.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SERVICES ========== -->
+    <section id="services" class="py-16 sm:py-20 lg:py-28 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <div class="inline-block bg-green-50 rounded-full px-4 py-1.5 mb-4">
+            <span class="text-green font-semibold text-sm tracking-wide uppercase">Our Services</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+            Comprehensive Skill Testing &amp; Certification
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto text-lg">
+            We offer end-to-end skill verification and certification services
+            ensuring candidates are fully prepared and qualified.
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+          <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow group">
+            <div class="relative h-44 sm:h-56 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600&q=80" alt="Skill Verification Program" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div class="absolute inset-0 bg-gradient-to-t from-green-dark/50 to-transparent"></div>
+            </div>
+            <div class="p-6 sm:p-8">
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Skill Verification Program (SVP)</h3>
+              <p class="text-gray-600 mb-5 leading-relaxed">
+                Comprehensive skill verification and testing authorized by the Saudi Ministry of Human Resources and Social Development. We assess and certify candidates across multiple trades.
+              </p>
+              <ul class="space-y-2">
+                <li class="flex items-center gap-2 text-sm text-gray-700">
+                  <svg class="w-4 h-4 text-green flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                  Government authorized testing
+                </li>
+                <li class="flex items-center gap-2 text-sm text-gray-700">
+                  <svg class="w-4 h-4 text-green flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                  Multiple trade categories
+                </li>
+                <li class="flex items-center gap-2 text-sm text-gray-700">
+                  <svg class="w-4 h-4 text-green flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                  International certification
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow group">
+            <div class="relative h-44 sm:h-56 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&q=80" alt="Trade Skill Assessment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div class="absolute inset-0 bg-gradient-to-t from-green-dark/50 to-transparent"></div>
+            </div>
+            <div class="p-6 sm:p-8">
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Trade Skill Assessment</h3>
+              <p class="text-gray-600 mb-5 leading-relaxed">
+                Rigorous practical and theoretical assessment for various trades including electrical, plumbing, welding, construction, mechanical, and more.
+              </p>
+              <ul class="space-y-2">
+                <li class="flex items-center gap-2 text-sm text-gray-700">
+                  <svg class="w-4 h-4 text-green flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                  Hands-on practical tests
+                </li>
+                <li class="flex items-center gap-2 text-sm text-gray-700">
+                  <svg class="w-4 h-4 text-green flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                  Industry-standard evaluation
+                </li>
+                <li class="flex items-center gap-2 text-sm text-gray-700">
+                  <svg class="w-4 h-4 text-green flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                  Detailed skill reports
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow group">
+            <div class="relative h-44 sm:h-56 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=80" alt="Pre-Deployment Training" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div class="absolute inset-0 bg-gradient-to-t from-green-dark/50 to-transparent"></div>
+            </div>
+            <div class="p-6 sm:p-8">
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Pre-Deployment Training</h3>
+              <p class="text-gray-600 mb-5 leading-relaxed">
+                Comprehensive training programs that prepare candidates for the Saudi Arabian work environment, including safety protocols, workplace culture, and technical skills.
+              </p>
+              <ul class="space-y-2">
+                <li class="flex items-center gap-2 text-sm text-gray-700">
+                  <svg class="w-4 h-4 text-green flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                  Safety &amp; compliance training
+                </li>
+                <li class="flex items-center gap-2 text-sm text-gray-700">
+                  <svg class="w-4 h-4 text-green flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                  Cultural orientation
+                </li>
+                <li class="flex items-center gap-2 text-sm text-gray-700">
+                  <svg class="w-4 h-4 text-green flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                  Technical upskilling
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow group">
+            <div class="relative h-44 sm:h-56 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=80" alt="Certification & Documentation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div class="absolute inset-0 bg-gradient-to-t from-green-dark/50 to-transparent"></div>
+            </div>
+            <div class="p-6 sm:p-8">
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Certification &amp; Documentation</h3>
+              <p class="text-gray-600 mb-5 leading-relaxed">
+                Complete documentation and certification services that meet all regulatory requirements for work authorization in Saudi Arabia.
+              </p>
+              <ul class="space-y-2">
+                <li class="flex items-center gap-2 text-sm text-gray-700">
+                  <svg class="w-4 h-4 text-green flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                  Recognized certificates
+                </li>
+                <li class="flex items-center gap-2 text-sm text-gray-700">
+                  <svg class="w-4 h-4 text-green flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                  Document verification
+                </li>
+                <li class="flex items-center gap-2 text-sm text-gray-700">
+                  <svg class="w-4 h-4 text-green flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                  Regulatory compliance
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PARTNERS (new marquee version) ========== -->
+    <section id="partners" class="py-16 sm:py-20 lg:py-28 bg-green-50 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+        <div class="text-center">
+          <div class="inline-block bg-green/10 rounded-full px-4 py-1.5 mb-4">
+            <span class="text-green font-semibold text-sm tracking-wide uppercase">Project Experience</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+            Our Industry Partners
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto text-lg">
+            We work with leading companies and recruitment agencies in Saudi
+            Arabia to ensure our candidates are placed with reputable employers.
+          </p>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="overflow-hidden">
+          <div class="marquee-track flex items-center gap-6 sm:gap-10 md:gap-12 w-max">
+            <div class="flex-shrink-0 w-24 h-16 sm:w-32 sm:h-20 md:w-40 md:h-28 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100">
+              <img src="unimac.png" alt="Unimac" class="max-w-full max-h-full object-contain" />
+            </div>
+            <div class="flex-shrink-0 w-24 h-16 sm:w-32 sm:h-20 md:w-40 md:h-28 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100">
+              <img src="sinopec.jpg" alt="Sinopec Engineering" class="max-w-full max-h-full object-contain" />
+            </div>
+            <div class="flex-shrink-0 w-24 h-16 sm:w-32 sm:h-20 md:w-40 md:h-28 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100">
+              <img src="hana.jpg" alt="Hana Water Company" class="max-w-full max-h-full object-contain" />
+            </div>
+            <div class="flex-shrink-0 w-24 h-16 sm:w-32 sm:h-20 md:w-40 md:h-28 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100">
+              <img src="smasco.jpg" alt="SMASCO" class="max-w-full max-h-full object-contain" />
+            </div>
+            <div class="flex-shrink-0 w-24 h-16 sm:w-32 sm:h-20 md:w-40 md:h-28 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100">
+              <img src="nas.jpeg" alt="NAS Manpower" class="max-w-full max-h-full object-contain" />
+            </div>
+            <div class="flex-shrink-0 w-24 h-16 sm:w-32 sm:h-20 md:w-40 md:h-28 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100">
+              <img src="ARCO.jpeg" alt="ARCO Alajeer" class="max-w-full max-h-full object-contain" />
+            </div>
+            <div class="flex-shrink-0 w-24 h-16 sm:w-32 sm:h-20 md:w-40 md:h-28 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100">
+              <img src="northgate.jpeg" alt="North Gate" class="max-w-full max-h-full object-contain" />
+            </div>
+            <!-- Duplicate for seamless loop -->
+            <div class="flex-shrink-0 w-24 h-16 sm:w-32 sm:h-20 md:w-40 md:h-28 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100">
+              <img src="unimac.png" alt="Unimac" class="max-w-full max-h-full object-contain" />
+            </div>
+            <div class="flex-shrink-0 w-24 h-16 sm:w-32 sm:h-20 md:w-40 md:h-28 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100">
+              <img src="sinopec.jpg" alt="Sinopec Engineering" class="max-w-full max-h-full object-contain" />
+            </div>
+            <div class="flex-shrink-0 w-24 h-16 sm:w-32 sm:h-20 md:w-40 md:h-28 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100">
+              <img src="hana.jpg" alt="Hana Water Company" class="max-w-full max-h-full object-contain" />
+            </div>
+            <div class="flex-shrink-0 w-24 h-16 sm:w-32 sm:h-20 md:w-40 md:h-28 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100">
+              <img src="smasco.jpg" alt="SMASCO" class="max-w-full max-h-full object-contain" />
+            </div>
+            <div class="flex-shrink-0 w-24 h-16 sm:w-32 sm:h-20 md:w-40 md:h-28 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100">
+              <img src="nas.jpeg" alt="NAS Manpower" class="max-w-full max-h-full object-contain" />
+            </div>
+            <div class="flex-shrink-0 w-24 h-16 sm:w-32 sm:h-20 md:w-40 md:h-28 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100">
+              <img src="ARCO.jpeg" alt="ARCO Alajeer" class="max-w-full max-h-full object-contain" />
+            </div>
+            <div class="flex-shrink-0 w-24 h-16 sm:w-32 sm:h-20 md:w-40 md:h-28 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100">
+              <img src="northgate.jpeg" alt="North Gate" class="max-w-full max-h-full object-contain" />
+            </div>
+          </div>
+        </div>
+        <div class="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-green-50 to-transparent pointer-events-none"></div>
+        <div class="absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-green-50 to-transparent pointer-events-none"></div>
+      </div>
+    </section>
+
+    <!-- ========== WHY CHOOSE US ========== -->
+    <section class="py-16 sm:py-20 lg:py-28 bg-green-dark">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <div class="inline-block bg-white/15 rounded-full px-4 py-1.5 mb-4">
+            <span class="text-white font-semibold text-sm tracking-wide uppercase">Why Choose Us</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">
+            The Dreams Training Advantage
+          </h2>
+          <p class="text-white/70 max-w-2xl mx-auto text-lg">
+            We are committed to excellence in every aspect of skill verification
+            and candidate preparation.
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-white/10 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/15 transition-all group">
+            <div class="w-12 h-12 rounded-lg bg-white/15 flex items-center justify-center mb-4 group-hover:bg-white/20 transition-colors">
+              <svg class="w-6 h-6 text-green-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">Government Authorized</h3>
+            <p class="text-white/70 text-sm leading-relaxed">Fully authorized SVP center recognized by the Saudi Ministry of Human Resources and Social Development.</p>
+          </div>
+
+          <div class="bg-white/10 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/15 transition-all group">
+            <div class="w-12 h-12 rounded-lg bg-white/15 flex items-center justify-center mb-4 group-hover:bg-white/20 transition-colors">
+              <svg class="w-6 h-6 text-green-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">Quality Assurance</h3>
+            <p class="text-white/70 text-sm leading-relaxed">We maintain the highest standards of quality and integrity in all testing and certification processes.</p>
+          </div>
+
+          <div class="bg-white/10 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/15 transition-all group">
+            <div class="w-12 h-12 rounded-lg bg-white/15 flex items-center justify-center mb-4 group-hover:bg-white/20 transition-colors">
+              <svg class="w-6 h-6 text-green-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">Experienced Team</h3>
+            <p class="text-white/70 text-sm leading-relaxed">Our team of expert assessors and trainers bring decades of combined industry experience.</p>
+          </div>
+
+          <div class="bg-white/10 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/15 transition-all group">
+            <div class="w-12 h-12 rounded-lg bg-white/15 flex items-center justify-center mb-4 group-hover:bg-white/20 transition-colors">
+              <svg class="w-6 h-6 text-green-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">Regulatory Compliance</h3>
+            <p class="text-white/70 text-sm leading-relaxed">Strict adherence to all guidelines and regulations set by Saudi Arabian authorities.</p>
+          </div>
+
+          <div class="bg-white/10 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/15 transition-all group">
+            <div class="w-12 h-12 rounded-lg bg-white/15 flex items-center justify-center mb-4 group-hover:bg-white/20 transition-colors">
+              <svg class="w-6 h-6 text-green-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">Modern Facilities</h3>
+            <p class="text-white/70 text-sm leading-relaxed">State-of-the-art testing facilities equipped with the latest tools and technology for accurate assessments.</p>
+          </div>
+
+          <div class="bg-white/10 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/15 transition-all group">
+            <div class="w-12 h-12 rounded-lg bg-white/15 flex items-center justify-center mb-4 group-hover:bg-white/20 transition-colors">
+              <svg class="w-6 h-6 text-green-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">Strong Network</h3>
+            <p class="text-white/70 text-sm leading-relaxed">Deep connections with leading Saudi Arabian companies and recruitment agencies for candidate placement.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT (new version) ========== -->
+    <section id="contact" class="py-16 sm:py-20 lg:py-36 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-12 gap-8 sm:gap-12 lg:gap-20">
+          <div class="md:col-span-5">
+            <div class="inline-block bg-green-50 rounded-full px-4 py-1.5 mb-4">
+              <span class="text-green font-semibold text-sm tracking-wide uppercase">Contact Us</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-10 leading-tight">
+              Let's Start a Conversation
+            </h2>
+
+            <div class="space-y-6 mb-10">
+              <div>
+                <div class="text-[11px] uppercase tracking-wider text-gray-400 mb-1">Phone</div>
+                <a href="tel:+917311112999" class="text-gray-900 font-medium hover:text-green transition-colors">+91 7311112999</a>
+              </div>
+              <div>
+                <div class="text-[11px] uppercase tracking-wider text-gray-400 mb-1">Email</div>
+                <a href="mailto:dreamstrainingcentretrichy@gmail.com" class="text-gray-900 font-medium hover:text-green transition-colors text-sm">dreamstrainingcentretrichy@gmail.com</a>
+              </div>
+              <div>
+                <div class="text-[11px] uppercase tracking-wider text-gray-400 mb-1">Location</div>
+                <p class="text-gray-900 font-medium">Tiruchirappalli, Tamil Nadu, India</p>
+              </div>
+              <div>
+                <div class="text-[11px] uppercase tracking-wider text-gray-400 mb-1">Hours</div>
+                <p class="text-gray-900 font-medium">Mon &ndash; Sat, 9:00 AM &ndash; 6:00 PM</p>
+              </div>
+            </div>
+
+            <div class="rounded-xl overflow-hidden shadow-lg">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125323.40216663498!2d78.61517874999999!3d10.804973449999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baaf50ff2aab191%3A0x8a07aa04d4a55b4!2sTiruchirappalli%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1707000000000!5m2!1sen!2sin"
+                width="100%"
+                height="220"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Dreams Training Centre Location"
+              ></iframe>
+            </div>
+          </div>
+
+          <div class="md:col-span-7">
+            <div class="bg-gray-50 rounded-2xl p-5 sm:p-8 border border-gray-100">
+              <div id="form-success" class="text-center py-12 hidden">
+                <div class="w-16 h-16 rounded-full bg-green-50 flex items-center justify-center mx-auto mb-4">
+                  <svg class="w-8 h-8 text-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Message Sent!</h3>
+                <p class="text-gray-600">Thank you for reaching out. We'll get back to you shortly.</p>
+                <button onclick="resetForm()" class="mt-6 text-green hover:text-green-light font-medium">
+                  Send another message
+                </button>
+              </div>
+
+              <form id="contact-form" onsubmit="handleSubmit(event)" class="space-y-5">
+                <div class="grid sm:grid-cols-2 gap-5">
+                  <div>
+                    <label for="name" class="block text-sm font-medium text-gray-800 mb-1.5">Full Name</label>
+                    <input id="name" type="text" required placeholder="Your name" class="w-full px-4 py-3 rounded-lg border border-gray-200 bg-white focus:border-green focus:ring-2 focus:ring-green/20 outline-none transition-all text-sm" />
+                  </div>
+                  <div>
+                    <label for="phone" class="block text-sm font-medium text-gray-800 mb-1.5">Phone Number</label>
+                    <input id="phone" type="tel" required placeholder="+91 XXXXX XXXXX" class="w-full px-4 py-3 rounded-lg border border-gray-200 bg-white focus:border-green focus:ring-2 focus:ring-green/20 outline-none transition-all text-sm" />
+                  </div>
+                </div>
+
+                <div>
+                  <label for="email" class="block text-sm font-medium text-gray-800 mb-1.5">Email Address</label>
+                  <input id="email" type="email" required placeholder="your@email.com" class="w-full px-4 py-3 rounded-lg border border-gray-200 bg-white focus:border-green focus:ring-2 focus:ring-green/20 outline-none transition-all text-sm" />
+                </div>
+
+                <div>
+                  <label for="trade" class="block text-sm font-medium text-gray-800 mb-1.5">Trade / Skill Category</label>
+                  <select id="trade" class="w-full px-4 py-3 rounded-lg border border-gray-200 bg-white focus:border-green focus:ring-2 focus:ring-green/20 outline-none transition-all text-sm text-gray-700">
+                    <option value="">Select a trade</option>
+                    <option value="electrical">Electrical</option>
+                    <option value="plumbing">Plumbing</option>
+                    <option value="welding">Welding</option>
+                    <option value="construction">Construction</option>
+                    <option value="mechanical">Mechanical</option>
+                    <option value="hvac">HVAC</option>
+                    <option value="carpentry">Carpentry</option>
+                    <option value="painting">Painting</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="message" class="block text-sm font-medium text-gray-800 mb-1.5">Message</label>
+                  <textarea id="message" rows="4" required placeholder="Tell us about your requirements..." class="w-full px-4 py-3 rounded-lg border border-gray-200 bg-white focus:border-green focus:ring-2 focus:ring-green/20 outline-none transition-all text-sm resize-none"></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-green hover:bg-green-light text-white font-semibold py-3.5 rounded-lg transition-colors text-sm">
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="py-10 sm:py-16 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10">
+        <div class="col-span-2 md:col-span-1 lg:col-span-1">
+          <div class="mb-4">
+            <span class="text-green font-bold text-xl">Dreams</span>
+            <span class="text-white font-medium text-xl"> Training Centre</span>
+          </div>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            Authorized SVP Center providing high-quality skill verification,
+            testing, and certification services in Tiruchirappalli, Tamil Nadu.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="text-green font-semibold mb-4 text-sm uppercase tracking-wider">Quick Links</h4>
+          <ul class="space-y-3">
+            <li><a href="#home" class="text-gray-400 hover:text-green transition-colors text-sm">Home</a></li>
+            <li><a href="#about" class="text-gray-400 hover:text-green transition-colors text-sm">About Us</a></li>
+            <li><a href="#vision" class="text-gray-400 hover:text-green transition-colors text-sm">Our Vision</a></li>
+            <li><a href="#services" class="text-gray-400 hover:text-green transition-colors text-sm">Services</a></li>
+            <li><a href="#partners" class="text-gray-400 hover:text-green transition-colors text-sm">Partners</a></li>
+            <li><a href="#contact" class="text-gray-400 hover:text-green transition-colors text-sm">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-green font-semibold mb-4 text-sm uppercase tracking-wider">Services</h4>
+          <ul class="space-y-3">
+            <li><span class="text-gray-400 text-sm">Skill Verification (SVP)</span></li>
+            <li><span class="text-gray-400 text-sm">Trade Skill Assessment</span></li>
+            <li><span class="text-gray-400 text-sm">Pre-Deployment Training</span></li>
+            <li><span class="text-gray-400 text-sm">Certification</span></li>
+            <li><span class="text-gray-400 text-sm">Documentation Support</span></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-green font-semibold mb-4 text-sm uppercase tracking-wider">Contact Info</h4>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3">
+              <svg class="w-4 h-4 text-green mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              <span class="text-gray-400 text-sm">Tiruchirappalli, Tamil Nadu, India</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <svg class="w-4 h-4 text-green flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              <a href="tel:+917311112999" class="text-gray-400 hover:text-green text-sm transition-colors">+91 7311112999</a>
+            </li>
+            <li class="flex items-center gap-3">
+              <svg class="w-4 h-4 text-green flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              <a href="mailto:dreamstrainingcentretrichy@gmail.com" class="text-gray-400 hover:text-green text-sm transition-colors break-all">dreamstrainingcentretrichy@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-800 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-gray-500 text-sm">
+          &copy; <script>document.write(new Date().getFullYear())</script> Dreams Training Centre. All rights reserved.
+        </p>
+        <div class="flex items-center gap-4">
+          <span class="text-gray-500 text-xs">Tiruchirappalli, Tamil Nadu, India</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      const hamburger = document.getElementById('hamburger-icon');
+      const close = document.getElementById('close-icon');
+      const isHidden = menu.classList.contains('hidden');
+      menu.classList.toggle('hidden');
+      hamburger.classList.toggle('hidden', !isHidden);
+      close.classList.toggle('hidden', isHidden);
+    }
+
+    function closeMobileMenu() {
+      document.getElementById('mobile-menu').classList.add('hidden');
+      document.getElementById('hamburger-icon').classList.remove('hidden');
+      document.getElementById('close-icon').classList.add('hidden');
+    }
+
+    function handleSubmit(e) {
+      e.preventDefault();
+      document.getElementById('contact-form').classList.add('hidden');
+      document.getElementById('form-success').classList.remove('hidden');
+    }
+
+    function resetForm() {
+      document.getElementById('contact-form').classList.remove('hidden');
+      document.getElementById('contact-form').reset();
+      document.getElementById('form-success').classList.add('hidden');
+    }
+  </script>
+
+</body>
+</html>
